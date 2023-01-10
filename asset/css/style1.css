@@ -1,0 +1,228 @@
+body{
+ background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("image/background.png");
+ height: 95vh;
+ width: 95%;
+ background-position: center;
+ background-size:cover;
+}
+
+.navbar{
+  width: 95%;
+  height: 15vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  width: 160px;
+}
+
+nav{
+  flex: 1;
+  padding-left: 10px;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  transition: 0.6s ease;
+}
+
+nav ul li a:hover{
+  color: cyan;
+  font-size: 15pt;
+}
+
+nav ul li.active a{
+  color: cyan;
+  font-size: 15pt;
+}
+
+.instagram{
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  padding-right: 50px;
+  transition: 0.6s ease;
+}
+
+.instagram:hover{
+  height: 60px;
+  width: 60px;
+}
+
+.facebook{
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  padding-right: 50px;
+  transition: 0.6s ease;
+}
+
+.facebook:hover{
+  height: 60px;
+  width: 60px;
+}
+
+.tiktok{
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+.tiktok:hover{
+  height: 60px;
+  width: 60px;
+}
+
+#biodata{
+  padding: 20px 0;
+  margin-left: 50px;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.biodata-col-1{
+  flex-basis: 35%;
+}
+
+.biodata-col-2{
+  flex-basis: 60%;
+}
+
+.biodata-col-2 h1{
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+
+.tab{
+  display: flex;
+  margin: 20px 0 40px; 
+}
+
+.tab p{
+  font-family: Times New Roman;
+  font-size: 19px;
+  display: block;
+  background-color: cyan;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: 1px solid white;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+.tab p:hover {
+  color: white;
+  border-color: white white white white;
+  background: transparent;
+}
+
+.tabcontent ul li{
+  list-style: disc;
+  margin: 10px 0;
+  color: white;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.tabcontent{
+  display: none;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+footer p:nth-child(1){
+  font-size: 30px;
+  color: white;
+  margin-bottom:20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+}
+
+footer p:nth-child(2){
+  font-size: 17px;
+  color: white;
+  width: 1000px;
+  text-align: center;
+}
+
+.contact{
+  display: flex;
+}
+
+.whatsapp{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 22px 10px;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+
+.whatsapp:hover{
+  height: 60px;
+  width: 60px;
+}
+
+.gmail{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 22px 10px;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+
+.gmail:hover{
+  height: 60px;
+  width: 60px;
+}
+
+#myBtn {
+  width: 50px;
+  height: 50px;
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99;  
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px;
+  font-size: 28px;
+}
+
+#myBtn:hover {
+  background-color: cyan;
+}

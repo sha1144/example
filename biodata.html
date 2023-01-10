@@ -1,0 +1,138 @@
+<html>
+<head>
+  <link href="asset/css/style1.css" rel="stylesheet">
+
+  <div class="navbar">
+    <img src="asset/image/logo.png" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li class="active"><a href="#">BIODATA</a></li>
+          <li><a href="education.html">EDUCATION</a></li>
+          <li><a href="experience.html">EXPERIENCE</a></li>
+          <li><a href="achievement.html">ACHIEVEMENT</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+      </nav>
+          <a href="https://www.instagram.com/jesmiraaa/" target="_blank"><img src="asset/image/instagram.png" class="instagram"></a>
+          <a href="https://m.facebook.com/people/Jesmira-Ibrahim/100008010765955" target="_blank"><img src="asset/image/facebook.png" class="facebook"></a>
+          <a href="https://www.tiktok.com/@jesmiraaaa" target="_blank"><img src="asset/image/tiktok.png" class="tiktok"></a>
+  </div>
+
+  <title> Biodata - My Resume </title>
+</head>
+
+<body>
+  <div id="biodata">
+    <div class="container">
+      <div class="row">
+         <div class="biodata-col-1">
+           <video width="500px" height="600px" controls>
+             <source src="asset/video/biodata.mp4" type="video/mp4">
+           Your browser does not support the video tag.
+           </video>
+         </div>
+         <div class="biodata-col-2">
+           <h1> My Biodata </h1>
+           
+           <div class="tab">
+             <p class="tablinks" onclick="opentab('name')"><b> NAME </b></p>
+             <p class="tablinks" onclick="opentab('dob')"><b> DOB </b></p>
+             <p class="tablinks" onclick="opentab('age')"><b> AGE </b></p>
+             <p class="tablinks" onclick="opentab('address')"><b> ADDRESS </b></p>
+             <p class="tablinks" onclick="opentab('email')"><b> EMAIL </b></p>
+             <p class="tablinks" onclick="opentab('contact')"><b> CONTACT </b></p>
+           </div>
+
+           <div class="tabcontent" id="name">
+             <ul>
+               <li> Puteri Intan Jesmira Binti Ibrahim </li>
+             </ul>
+           </div>
+           <div class="tabcontent" id="dob">
+             <ul>
+               <li> 20 March 2002 </li>
+               <li> Hospital Kuala Lumpur </li>
+             </ul>
+           </div>
+           <div class="tabcontent" id="age">
+             <ul>
+               <li> 20 years old </li>
+             </ul>
+           </div>
+           <div class="tabcontent" id="address">
+             <ul>
+               <li> Lot 1807, Kampung Rasau Ulu Gapis, Slim River, Muallim, <br> 35800, Perak </li>
+               <li> C2-3-3, Pangsapuri Camelia Court, Persiaran Lembah Hijau 4, <br> Bandar Tasik Puteri, Rawang, 48020, Selangor </li>
+             </ul>
+           </div>
+           <div class="tabcontent" id="email">
+             <ul>
+               <li> jesmira7@gmail.com </li>
+             </ul>
+           </div>
+           <div class="tabcontent" id="contact">
+             <ul>
+               <li> 012-2873083 </li>
+             </ul>
+           </div>
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    function opentab(tabname) {
+
+      var i, tabcontent, tablinks;
+
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active");
+      }
+
+      document.getElementById(tabname).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+  </script>
+
+<br><br><br>
+
+  <footer>
+    <p> Everyone Has Their Own Timeline, Moves At Your Own Speed. <br> <i> -motto by J- </i></p>
+    <p> For further information - please click on the link below to contact or email me. </p>
+    <div class="contact">
+      <a href="https://wa.link/sgwp99" target="_blank"><img src="asset/image/whatsapp.png" class="whatsapp"></a>
+      <a href="mailto:jesmira7@gmail.com" target="_blank"><img src="asset/image/gmail.png" class="gmail"></a>
+    </div>
+  </footer>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"> ^ </button>
+
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+
+</body>
+</html>

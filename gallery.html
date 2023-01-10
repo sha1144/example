@@ -1,0 +1,177 @@
+<html>
+<head>
+
+  <link href="asset/css/style5.css" rel="stylesheet">
+
+  <div class="navbar">
+    <img src="asset/image/logo.png" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="biodata.html">BIODATA</a></li>
+          <li><a href="education.html">EDUCATION</a></li>
+          <li><a href="experience.html">EXPERIENCE</a></li>
+          <li><a href="achievement.html">ACHIEVEMENT</a></li>
+          <li class="active"><a href="#">GALLERY</a></li>
+        </ul>
+      </nav>
+          <a href="https://www.instagram.com/jesmiraaa/" target="_blank"><img src="asset/image/instagram.png" class="instagram"></a>
+          <a href="https://m.facebook.com/people/Jesmira-Ibrahim/100008010765955" target="_blank"><img src="asset/image/facebook.png" class="facebook"></a>
+          <a href="https://www.tiktok.com/@jesmiraaaa" target="_blank"><img src="asset/image/tiktok.png" class="tiktok"></a>
+  </div>
+
+  <title> Gallery - My Resume </title>
+</head>
+
+<body>
+
+  <h1> My Gallery </h1>
+
+  <center>
+    <audio controls autoplay loop class="audio">
+	<source src="asset/audio/seeyouagain.mp3" type="audio/mp3">
+    </audio>
+  </center>
+<br>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 13</div>
+      <img src="asset/image/1.jpeg" width="900px" height="500px">
+      <div class="text"> DINNER BATCH: A ROSEATE SOIREE </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 13</div>
+      <img src="asset/image/2.jpeg" width="900px" height="500px">
+      <div class="text"> 5 DEDIKASI </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 13</div>
+      <img src="asset/image/3.jpeg" width="900px" height="500px">
+      <div class="text"> HOMEROOM TEACHER'S BIRTHDAY CELEBRATION </div>
+    </div>
+   
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 13</div>
+      <img src="asset/image/4.jpeg" width="900px" height="500px">
+      <div class="text"> PERSATUAN USAHAWAN MUDA (PUM) </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 13</div>
+      <img src="asset/image/5.jpeg" width="900px" height="500px">
+      <div class="text"> CO-CURRICULUM DAY </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 13</div>
+      <img src="asset/image/6.jpeg" width="900px" height="500px">
+      <div class="text"> MOCK INTERVIEW </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 13</div>
+      <img src="asset/image/7.jpeg" width="900px" height="500px">
+      <div class="text"> HARI RAYA AIDILFITRI CELEBRATION </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 13</div>
+      <img src="asset/image/8.jpeg" width="900px" height="500px">
+      <div class="text"> RAXIS </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">9 / 13</div>
+      <img src="asset/image/9.jpeg" width="900px" height="500px">
+      <div class="text"> HOMEROOM GRADUATION </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">10 / 13</div>
+      <img src="asset/image/10.jpeg" width="900px" height="500px">
+      <div class="text"> RUBY A STALL </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">11 / 13</div>
+      <img src="asset/image/11.jpeg" width="900px" height="500px">
+      <div class="text"> LAST AACR CLASS WITH PUAN ROSNITA </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">12 / 13</div>
+      <img src="asset/image/12.jpeg" width="900px" height="500px">
+      <div class="text"> GIRL CLASSMATES </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">13 / 13</div>
+      <img src="asset/image/13.jpeg" width="900px" height="500px">
+      <div class="text"> MAJLIS TERTINGGI INFORMA </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <script>
+      let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    
+    slides[slideIndex-1].style.display = "block";
+  }
+  </script>
+
+  <footer>
+    <p> Everyone Has Their Own Timeline, Moves At Your Own Speed. <br> <i> -motto by J- </i></p>
+    <p> For further information - please click on the link below to contact or email me. </p>
+    <div class="contact">
+      <a href="https://wa.link/sgwp99" target="_blank"><img src="asset/image/whatsapp.png" class="whatsapp"></a>
+      <a href="mailto:jesmira7@gmail.com" target="_blank"><img src="asset/image/gmail.png" class="gmail"></a>
+    </div>
+  </footer>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"> ^ </button>
+
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+
+</body>
+</html>

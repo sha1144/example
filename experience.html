@@ -1,0 +1,134 @@
+<html>
+<head>
+  <link href="asset/css/style3.css" rel="stylesheet">
+
+  <div class="navbar">
+    <img src="asset/image/logo.png" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="biodata.html">BIODATA</a></li>
+          <li><a href="education.html">EDUCATION</a></li>
+          <li class="active"><a href="#">EXPERIENCE</a></li>
+          <li><a href="achievement.html">ACHIEVEMENT</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+      </nav>
+          <a href="https://www.instagram.com/jesmiraaa/" target="_blank"><img src="asset/image/instagram.png" class="instagram"></a>
+          <a href="https://m.facebook.com/people/Jesmira-Ibrahim/100008010765955" target="_blank"><img src="asset/image/facebook.png" class="facebook"></a>
+          <a href="https://www.tiktok.com/@jesmiraaaa" target="_blank"><img src="asset/image/tiktok.png" class="tiktok"></a>
+  </div>
+
+  <title> Experience - My Resume </title>
+</head>
+
+<body>
+
+  <h1> My Experience </h1>
+
+  <div class="tab">
+    <button class="tablinks" onclick="opentab('motivasi')"> Program Motivasi Kecemerlangan </button>
+    <button class="tablinks" onclick="opentab('resume')"> Resume Crafting Skill Workshop & Cracking Interview </button>
+    <button class="tablinks" onclick="opentab('ramahmesra')"> Program Ramah Mesra Pelajar OKU & Tahfiz Plus </button>
+    <button class="tablinks" onclick="opentab('seniornight')"> Senior's Night Celebration </button>
+    <button class="tablinks" onclick="opentab('agm')"> Annual General Meeting (AGM) </button>
+    <button class="tablinks" onclick="opentab('swim')"> Survival With Information (SWIM) </button>
+    <button class="tablinks" onclick="opentab('saf')"> Sukan Antara Fakulti (SAF) </button>
+  </div>
+
+  <div id="motivasi" class="tabcontent">
+    <h2> Poster Designer </h2>
+    <p> I was in-charged of designing a poster to promote the 'Program Motivasi Kecemerlangan' event as well as trying to communicate a message about the details for the students in UiTM Kedah, especially Semester 1. </p>
+    <img src="asset/image/motivasi.jpeg" width="30%">
+  </div>
+
+  <div id="resume" class="tabcontent">
+    <h2> Correspondent </h2>
+    <p> I was responsibled for writing the 'Resume Making Skills Workshop' invitation letter to the lecturer. This letter helped the project leader to calculate the number of people who can attend the workshop and the people he should expect so that the committee members can make the necessary arrangements. </p> 
+    <img src="asset/image/resume.jpeg" width="30%">
+  </div>
+
+  <div id="ramahmesra" class="tabcontent">
+    <h2> Student's Usher </h2>
+    <p> 'Program Ramah Mesra Pelajar OKU & Tahfiz Plus' is an iftar event during Ramadhan. I was assigned to escort the handicapped students and tahfiz students towards their respective tables so they won't face any troubles and get to their seats safely. </p>
+    <img src="asset/image/ramahmesra.jpeg" height="300px" width="600px">
+  </div>
+
+  <div id="seniornight" class="tabcontent">
+    <h2> VIP's Usher </h2>
+    <p> I was instructed to guide the VIPs throughout the 'Senior's Night Celebration Event'. This is an event formality as well as to ensure that the event is having a steady hand to usher them according to the tentative flow. </p>
+    <img src="asset/image/seniornight.jpeg" height="300px" width="400px">
+  </div>
+
+  <div id="agm" class="tabcontent">
+    <h2> Speaker </h2>
+    <p> As a vice-secretary of INFORMA academic club, I made a report of all of the programs held during the last semester in powerpoint slides. Then, in AGM, I presented it to the IM students, lecturers and club advisers along with the upcoming programs that will be done in the current semester. </p>
+    <video width="600px" height="300px" controls>
+      <source src="asset/video/agm.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div id="swim" class="tabcontent">
+    <h2> Food PIC </h2>
+    <p> I was in-control of finding the food supplier for the 'Survival With Information Program'. Since it's an explorace theme program, I must make sure that the students are having breakfast before doing outdoor activities to avoid fainting, gastric, and so on. Other than that, I also needed to serve the VIPs and prepare the dining place.</p>
+    <img src="asset/image/swim.jpeg" height="300px" width="400px">
+  </div>
+
+  <div id="saf" class="tabcontent">
+    <h2> Netball PIC </h2>
+    <p> My role was to find the netball representatives from Faculty of IM. There were 26 players who decided to participate, so I held a selection to choose 2 teams with 20 players including additionals. Then, I managed their registration, monitored their progression, fulfilled their needs during training, and showed support during the tournament. </p>
+    <img src="asset/image/saf.jpeg" height="300px" width="400px">
+  </div>
+
+  <script>
+  function opentab(tabname) {
+
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active");
+    }
+
+    document.getElementById(tabname).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+   <footer>
+    <p> Everyone Has Their Own Timeline, Moves At Your Own Speed. <br> <i> -motto by J- </i></p>
+    <p> For further information - please click on the link below to contact or email me. </p>
+    <div class="contact">
+      <a href="https://wa.link/sgwp99" target="_blank"><img src="asset/image/whatsapp.png" class="whatsapp"></a>
+      <a href="mailto:jesmira7@gmail.com" target="_blank"><img src="asset/image/gmail.png" class="gmail"></a>
+    </div>
+  </footer>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"> ^ </button>
+
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+
+</body>
+</html>

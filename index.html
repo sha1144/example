@@ -1,0 +1,138 @@
+<html>
+<head>
+  <link href="asset/css/style.css" rel="stylesheet">
+ 
+  <div class="navbar">
+    <img src="asset/image/logo.png" class="logo">
+      <nav>
+        <ul>
+          <li class="active"><a href="#">HOME</a></li>
+          <li><a href="biodata.html">BIODATA</a></li>
+          <li><a href="education.html">EDUCATION</a></li>
+          <li><a href="experience.html">EXPERIENCE</a></li>
+          <li><a href="achievement.html">ACHIEVEMENT</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+      </nav>
+          <a href="https://www.instagram.com/jesmiraaa/" target="_blank"><img src="asset/image/instagram.png" class="instagram"></a>
+          <a href="https://m.facebook.com/people/Jesmira-Ibrahim/100008010765955" target="_blank"><img src="asset/image/facebook.png" class="facebook"></a>
+          <a href="https://www.tiktok.com/@jesmiraaaa" target="_blank"><img src="asset/image/tiktok.png" class="tiktok"></a>
+  </div>
+
+  <title> Home - My Resume </title>
+</head>
+
+<body>
+  
+  <body onload="startTime()">
+
+  <font color="white" align="right""><div id="clock"></div></font>
+
+  <div class="intro">
+    <h1><b> HI, I AM <font color="cyan"> JESMIRA. </font></b></h1>
+    <h2> This is my official resume website to show all of my <br> details and experiences. </h2>
+    <a href="https://drive.google.com/file/d/13YLfPKIA0NO7ASlxdj-kL3lxS9sruzvT/view?usp=sharing" target="_blank"> <button type="downloadcv"><b> DOWNLOAD CV </b></button></a>
+  </div>
+  
+  <img src="asset/image/circle.png" class="circle">
+  <img src="asset/image/jesmira.png" class="jesmira">
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <section class="aboutme">
+    <div class="content">
+      <img src="asset/image/jesmira1.png">
+      <div class="text">
+        <h3> About Me </h3>
+        <h4><font color="cyan"> Diploma </font> Student </h4>
+        <p> I am a detailed-oriented Information Management student from Universiti Teknologi Mara, with knowledge and skills to take on the challenging demands of managing information in various forms and in various types of organisations. Seeking a position that related to these main areas: <b><font color="cyan"> Information Technology, Professional and Technical Aspects of Information, Records Management, Public Relations, and Users’ Needs and Services.</font></b></p>
+        <a href="biodata.html"><button type="readmore"><b> READ MORE </b></button></a>
+      </div>
+    </div>
+  </section>
+
+<br><br><br><br><br><br>
+
+  <div class="skills">
+    <div class="title">
+      <h5> My Skills </h5>
+    </div>
+
+    <div class="box">
+      <div class="card">
+        <img src="asset/image/magnifying.png">
+        <h6> Attention to Detail </h6>
+        <div class="explaination">
+          <p> Mistakes are crucial to businesses. Hence, an organization needs detail-oriented employees in all they do, to accomplish a task while demonstrating a thorough concern for all the areas involved, no matter how small. </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="asset/image/multitasking.png">
+        <h6> Multitasking </h6>
+        <div class="explaination">
+          <p> Today’s workplace is in many ways busier and more complicated than in the past. Thus, an employer must seek a job candidate that can do performance of more than one task at the same time to juggle projects and competing priorities. </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="asset/image/clock.png">
+        <h6> Time Management </h6>
+        <div class="explaination">
+          <p> Time is money. I use my time effectively and productively, especially at work to tune out distractions, meet deadlines and get the most out of the workday. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br><br><br><br><br><br><br><br><br>
+
+  <footer>
+    <p> Everyone Has Their Own Timeline, Moves At Your Own Speed. <br> <i> -motto by J- </i></p>
+    <p> For further information - please click on the link below to contact or email me. </p>
+    <div class="contact">
+      <a href="https://wa.link/sgwp99" target="_blank"><img src="asset/image/whatsapp.png" class="whatsapp"></a>
+      <a href="mailto:jesmira7@gmail.com" target="_blank"><img src="asset/image/gmail.png" class="gmail"></a>
+    </div>
+  </footer>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"> ^ </button>
+
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+
+  <script>
+  function startTime() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
+    setTimeout(startTime, 1000);
+  }
+
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+  </script>
+
+</body>
+</html>

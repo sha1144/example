@@ -1,0 +1,242 @@
+body{
+ background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("image/background.png");
+ height: 95vh;
+ width: 95%;
+ background-position: center;
+ background-size:cover;
+}
+
+.navbar{
+  width: 95%;
+  height: 15vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  width: 160px;
+}
+
+nav{
+  flex: 1;
+  padding-left: 10px;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  transition: 0.6s ease;
+}
+
+nav ul li a:hover{
+  color: cyan;
+  font-size: 15pt;
+}
+
+nav ul li.active a{
+  color: cyan;
+  font-size: 15pt;
+}
+
+.instagram{
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  padding-right: 50px;
+  transition: 0.6s ease;
+}
+
+.instagram:hover{
+  height: 60px;
+  width: 60px;
+}
+
+.facebook{
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  padding-right: 50px;
+  transition: 0.6s ease;
+}
+
+.facebook:hover{
+  height: 60px;
+  width: 60px;
+}
+
+.tiktok{
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+.tiktok:hover{
+  height: 60px;
+  width: 60px;
+}
+
+h1{
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.audio{
+  margin-left: 50px;
+}
+
+{box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-left: 275px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin-right: 100px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+footer p:nth-child(1){
+  font-size: 30px;
+  color: white;
+  margin-bottom:20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+}
+
+footer p:nth-child(2){
+  font-size: 17px;
+  color: white;
+  width: 1000px;
+  text-align: center;
+}
+
+.contact{
+  display: flex;
+}
+
+.whatsapp{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 22px 10px;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+
+.whatsapp:hover{
+  height: 60px;
+  width: 60px;
+}
+
+.gmail{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 22px 10px;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+
+.gmail:hover{
+  height: 60px;
+  width: 60px;
+}
+
+#myBtn {
+  width: 50px;
+  height: 50px;
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99;  
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px;
+  font-size: 28px;
+}
+
+#myBtn:hover {
+  background-color: cyan;
+}
